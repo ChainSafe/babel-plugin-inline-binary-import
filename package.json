@@ -1,6 +1,6 @@
 {
-  "name": "babel-plugin-inline-import",
-  "version": "3.0.0",
+  "name": "@chainsafe/babel-plugin-inline-binary-import",
+  "version": "1.0.0",
   "description": "Babel plugin to make raw files importable",
   "author": "Victor Duarte (Quadric ApS) <contact@quadric.net>",
   "license": "MIT",
@@ -17,7 +17,7 @@
     "import",
     "inline"
   ],
-  "repository": "Quadric/babel-plugin-inline-import",
+  "repository": "chainsafe/babel-plugin-inline-binary-import",
   "scripts": {
     "test": "mocha test/*.spec.js --require @babel/register --require @babel/polyfill --require config/mocha.js",
     "test-watch": "mocha test/*.spec.js --require @babel/register --require @babel/polyfill --require config/mocha.js --watch",

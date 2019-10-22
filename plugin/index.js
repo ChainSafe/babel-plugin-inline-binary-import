@@ -27,7 +27,7 @@ export default function({ types: t }) {
                   leadingComments: [
                     {
                       type: 'CommentBlock',
-                      value: ` babel-plugin-inline-import '${givenPath}' `
+                      value: ` babel-plugin-inline-binary-import '${givenPath}' `
                     }
                   ]
                 });

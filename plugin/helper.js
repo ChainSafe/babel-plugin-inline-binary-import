@@ -4,9 +4,8 @@ import requireResolve from 'require-resolve';
 
 export default class BabelInlineImportHelper {
   static extensions = [
-    '.raw',
-    '.text',
-    '.graphql',
+    '.bin',
+    '.wasm'
   ];
 
   static root = global.rootPath || process.cwd();
@@ -36,7 +35,7 @@ export default class BabelInlineImportHelper {
       throw new Error(`Path '${givenPath}' could not be found for '${reference}'`);
     }
 
-    return fs.readFileSync(mod.src).toString();
+    return fs.readFileSync(mod.src).toString("binary");
   }
 
   static transformRelativeToRootPath(path, rootPathSuffix) {
